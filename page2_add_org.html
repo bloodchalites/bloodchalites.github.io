@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>MY EKB - Form</title>
+</head>
+<body>
+    <header class="header d-flex justify-content-between align-items-center">
+        <div class="logo">
+            <a href="/index.html">MY EKB</a>
+        </div>
+        <nav>
+            <a href="/faq.html">
+                <img src="images/Help.png" width="30" height="30">
+            </a>
+            <a href="#">
+                <img src="images/Bell.png" width="50" height="50">
+            </a>
+            <a href="#">
+                <img src="images/Profile.png" width="30" height="30">
+            </a>
+        </nav>
+    </header>
+    <div class="container2">
+        <div class="form-section">
+            <h2>Регистрация</h2>
+            <form id="registrationForm">
+                <label for="country">Страна *</label>
+                <input type="text" id="country" name="country" required>
+                <div id="error-country" class="error-message"></div>
+    
+                <label for="org-type">Форма организации *</label>
+                <select id="org-type" name="org-type" required>
+                    <option value="">Выберите</option>
+                    <option value="ИП с НДС">ИП с НДС</option>
+                    <option value="ИП без НДС (УСН, ЕСХН, ЕНДВ)">ИП без НДС (УСН, ЕСХН, ЕНДВ)</option>
+                    <option value="ИП на НПД">ИП на НПД</option>
+                    <option value="Самозанятый">Самозанятый</option>
+                    <option value="ООО">ООО</option>
+                    <option value="ИП">ИП</option>
+                </select>
+                <div id="error-org-type" class="error-message"></div>
+    
+                <label for="inn">Введите ИНН вашей организации *</label>
+                <input type="text" id="inn" name="inn" required>
+                <div id="error-inn" class="error-message"></div>
+    
+                <label for="fio">ФИО руководителя *</label>
+                <input type="text" id="fio" name="fio" required>
+                <div id="error-fio" class="error-message"></div>
+    
+                <label for="org-name">Наименование организации *</label>
+                <input type="text" id="org-name" name="org-name" required>
+                <div id="error-org-name" class="error-message"></div>
+    
+                <label for="phone">Номер телефона</label>
+                <input type="tel" id="phone" name="phone" placeholder="+7 (123)-456-78-90">
+                <div id="error-phone" class="error-message"></div>
+    
+                <button class="button2" id="myBtn" type="submit">Отправить заявку</button>
+            </form>
+        </div>
+        <div class="info-section">
+            <p >Личный кабинет активируется после поступления денежных средств. Срок зачисления до 5 рабочих дней.</p>
+            <p>Оплачивайте взнос со счета той компании, которую укажете при регистрации. Если провести оплату с счета другой компании, личный кабинет не активируется.</p>
+            <p>Перед регистрацией и оплатой взноса убедитесь, что у вас есть подходящий счет для дальнейшего сотрудничества.</p>
+            <img src="/images/Qr.jpg" alt="QR-код" class="qr-code" width="150">
+            <a href="#" class="download-btn">Скачать реквизиты</a>
+        </div>
+    </div>
+
+    <!-- Модальный -->
+    <div id="myModal" class="modal">
+        <!-- Модальное содержание -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="/images/ok.png" alt="">
+            <p>Благодарим за регистрацию!</p>
+            <p>Ваша форма будет рассмотрена в течение 5 рабочих дней.</p>
+            <p>Скоро вам позвонит специалист для дальнеших действий.</p>
+        </div>
+    </div>
+    <script src="/js/Modal.js"></script>
+    <script src="/js/FormValidation.js"></script>
+    <script src="/js/CallbackValidation.js"></script>
+    <script src="/js/Main.js"></script>
+
+</body>
+</html>

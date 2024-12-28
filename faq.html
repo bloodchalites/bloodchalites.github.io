@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>MY EKB - FAQ</title>
+</head>
+<body>
+    <header class="header d-flex justify-content-between align-items-center">
+        <div class="logo">
+            <a href="/index.html">MY EKB</a>
+        </div>
+        <nav>
+            <a href="/faq.html">
+                <img src="images/Help.png" width="30" height="30">
+            </a>
+            <a href="#">
+                <img src="images/Bell.png" width="50" height="50">
+            </a>
+            <a href="#">
+                <img src="images/Profile.png" width="30" height="30">
+            </a>
+        </nav>
+    </header>
+    <div class="main-container ">
+        <div class="content-container">
+            <h1>Информация о компании MY EKB в городе Екатеринбург</h1>
+            <p class="p_faq">Добро пожаловать в раздел часто задаваемых вопросов (FAQ) о нашей компании и нашем каталоге организаций в Екатеринбурге. Здесь вы найдете ответы на самые популярные вопросы.</p>
+        </div>
+
+        <div class="content-container">
+            <div class="faq-question">1. Что представляет собой ваш каталог организаций?</div>
+            <div class="faq-answer">Наш каталог — это онлайн-платформа, где собраны компании и организации Екатеринбурга из разных сфер деятельности. Мы предоставляем удобный инструмент для поиска и сравнения услуг, товаров, а также контактной информации.</div>
+        </div>
+
+        <div class="content-container">
+            <div class="faq-question">2. Какие организации представлены в каталоге?</div>
+            <div class="faq-answer">В каталоге представлены компании из различных отраслей: рестораны, магазины, услуги, медицинские учреждения, образовательные учреждения, развлекательные заведения и многое другое.</div>
+        </div>
+
+        <div class="content-container">
+            <div class="faq-question">3. Могу ли я добавить свою организацию в каталог?</div>
+            <div class="faq-answer">Да, конечно! Чтобы добавить свою компанию, необходимо зарегистрироваться на нашем сайте и заполнить форму добавления организации. После проверки модератором информация будет опубликована.</div>
+        </div>
+        <div class="content-container">
+            <div class="faq-question">4. Как найти нужную организацию?</div>
+            <div class="faq-answer">Вы можете воспользоваться строкой поиска, введя название компании, категорию услуг или ключевое слово. 
+                Для более точного поиска доступны фильтры по районам, часам работы и другим критериям.
+            </div>
+        </div>
+        <div class="content-container">
+            <div class="faq-question">5. Какие преимущества дает размещение в каталоге?</div>
+            <div class="faq-answer">Размещение в каталоге дает множество преимуществ:
+                <li>Увеличение видимости вашей компании среди жителей Екатеринбурга.</li>
+                <li>Привлечение новых клиентов.</li>
+                <li>Повышение доверия через отзывы пользователей.</li>
+                <li>Возможность улучшить SEO и видимость в поисковых системах.</li> 
+            </div>
+        </div>
+        <div class="content-container">
+            <div class="faq-question">6. Есть ли у вас мобильное приложение?</div>
+            <div class="faq-answer">Да, у нас есть мобильное приложение, доступное для скачивания в App Store и Google Play. 
+                Приложение позволяет легко находить компании, читать отзывы и получать актуальную информацию в удобном формате.         
+            </div>
+        </div>
+        <div class="form-section-wrapper">
+            <!-- Форма -->
+            <div class="form-section2">
+                <h2>Обратный звонок</h2>
+                <form id="callbackForm" onsubmit="return validateForm(event)">
+                    <label for="callback-phone">Ваш номер телефона *</label>
+                    <input type="tel" id="callback-phone" name="callback-phone" placeholder="+7 (123)-456-78-90" required>
+                    <span id="phone-error" class="error-message"></span> <!-- Сообщение об ошибке для телефона -->
+          
+                    <label for="callback-topic">Что вас интересует?</label>
+                    <textarea id="callback-topic" name="callback-topic" placeholder="Опишите ваш вопрос или тему обращения" rows="4" required></textarea>
+                    <span id="topic-error" class="error-message"></span> <!-- Сообщение об ошибке для темы -->
+                
+                    <button class="button2" type="submit">Заказать звонок</button>
+                </form>
+            </div>     
+          
+            <div class="form-info">
+                <h3>Как заполнять форму:</h3>
+                <ul>
+                    <li><strong>Номер телефона:</strong> Введите ваш номер телефона в формате: +7 (123)-456-78-90.</li>
+                    <li><strong>Тема обращения:</strong> Опишите, о чём хотите поговорить. Например, вопрос о товаре или услуге.</li>
+                    <li><strong>Важно:</strong> Все поля, помеченные звездочкой (*), обязательны для заполнения.</li>
+                </ul>
+            </div>
+        </div>
+    </div>   
+    <script src="/js/FormValidation.js"></script>
+    <script src="/js/CallbackValidation.js"></script>
+    <script src="/js/Main.js"></script>
+
+</body>
+</html>
